@@ -15,5 +15,63 @@ categories: java static eclipse
 - 클래스 메소드라고도한다
 - 객체가 생성되지 않은 상태에서 호출되는 메소드이므로 객체 안에서만 존재하는 **인스턴스변수** (멤버변수)는 사용할 수 없고, **정적변수** (static 변수, 클래스변수)와 **지역변수** (로컬변수)만 사용할 수 있다.
 - 인스턴스변수(멤버변수)는 객체가 생성되어야만 사용할 수 있기 때문이다.
+- `클래스명.static메소드명` *(ex. Math.sqrt(9.0);)* 으로 호출한다.
 
 ## singleton
+
+#### ✔ 싱글톤이란
+- 싱글톤패턴은 인스턴스를 단 하나만 생성하는 디자인 패턴이다. *(ex. 회사 객체 - 직원은 여러명이지만 회사는 하나이다.)*
+- 싱글톤 패턴 특징
+  1. **private 생성자**
+ 단 하나의 인스턴스를 보장하기 위해 
+  3. **static으로 선언된 유일한 인스턴스**
+  4. **외부에서 참조할 수 있는 public 메소드**
+ 오직 getInstance() 메소드로 instance에 접근가능하다.  
+
+
+
+```java
+package singleton;
+
+// 싱글톤 패턴으로 회사 클래스 구현하기
+
+public class Company {
+
+	// 유일한 인스턴스 - Company클래스 내부에서 하나의 인스턴스 생성
+	// private로 외부에서 이 인스턴스에 접근하지 못하도록 제한
+//	private static Company instance = new Company();
+//	private static Company instance = null;
+	private static Company instance;
+//	- 미리 생성하지 않는다
+	
+
+	// 생성자 private로 지정
+	// - 디폴트 생성자 자동으로 만들어지지 않고, Company클래스 내부에서만 이 클래스의 생성을 제어할 수 있다.
+	private Company() {
+		System.out.println("Create Instance");
+	}
+
+	// private로 선언한 인스턴스 반환하는 public메소드
+	// static메소드 - 인스턴스 생성과 상관없이 호출해야함
+	// 유일하게 instance에 접근할 수 있는 방법
+	public static Company getInstance() {
+		// 최초로 사용할 때 인스턴스 생성
+		if (instance == null) {
+			instance = new Company();
+		}
+		return instance;
+	}
+
+	
+	public static void main(String[] args) {
+		Company myCompany1 = Company.getInstance();  
+		// 최초로 인스턴스 생성 - "Create Instance"출력
+		Company myCompany2 = Company.getInstance();  
+		// 인스턴스 생성안됨 반환만 함
+		
+		System.out.println(myCompany1 == myCompany2);
+		// true 출력
+	}
+}
+
+```
