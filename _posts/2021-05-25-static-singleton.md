@@ -9,7 +9,6 @@ categories: java static eclipse
 - **클래스 변수** 라고도 한다.
 - 모든 객체(인스턴스)에 공통인 변수가 필요할 때 사용한다.  
   *(ex. 자동차의 시리얼 번호, 학생번호)*
-- static 변수는 하나의 클래스에 하나만 존재한다.
 - `클래스명.static변수명` *(ex. Car.numberOfCars)*  으로 사용한다.
 
 ### ✔ static 메소드
