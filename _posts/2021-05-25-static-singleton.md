@@ -75,7 +75,7 @@ public class Company {
 	}
 }
 ```
-장점 : 객체가 필요할 때 getInstance()메소드로 인스턴스를 얻을 수 있다.
+장점 : 객체가 필요할 때 getInstance()메소드로 인스턴스를 얻을 수 있다.  
 단점 : 단 하나의 instance 보장 문제 - multi-thread 환경에서 여러 인스턴스가 생성될 수 있다.
 
 
