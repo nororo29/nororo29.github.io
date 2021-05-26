@@ -131,4 +131,4 @@ public class Company {
 ###### 참고
 https://ssoonidev.tistory.com/98  
 https://limkydev.tistory.com/67   
-박은종, 『Do it! 자바 프로그래밍 입문』, 이지퍼블리싱(2020), p193-196
+[박은종, 『Do it! 자바 프로그래밍 입문』, 이지퍼블리싱(2020), p193-196](http://www.yes24.com/Product/Goods/62281686?pid=123487&cosemkid=go15828548340176788&gclid=Cj0KCQjwwLKFBhDPARIsAPzPi-JiB-4qcveTO9APFkVfutMIy1N5nTpQMGHWlLyt3hJEn0TbgJ9bybMaAu_TEALw_wcB)
