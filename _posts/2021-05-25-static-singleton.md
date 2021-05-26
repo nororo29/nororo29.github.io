@@ -5,14 +5,14 @@ categories: java static eclipse
 ---
 
 ## static
-#### ✔ static 변수
+### ✔ static 변수
 - **클래스 변수** 라고도 한다.
 - 모든 객체(인스턴스)에 공통인 변수가 필요할 때 사용한다.  
   *(ex. 자동차의 시리얼 번호, 학생번호)*
 - static 변수는 하나의 클래스에 하나만 존재한다.
 - `클래스명.static변수명` *(ex. Car.numberOfCars)*  으로 사용한다.
 
-#### ✔ static 메소드
+### ✔ static 메소드
 - **클래스 메소드** 라고도한다
 - 객체가 생성되지 않은 상태에서 호출되는 메소드이므로 객체 안에서만 존재하는 인스턴스변수(멤버변수)는 사용할 수 없고, **정적변수(static 변수)와 지역변수(로컬변수)만 사용할 수 있다.**
 - 인스턴스변수(멤버변수)는 객체가 생성되어야만 사용할 수 있기 때문이다.
@@ -20,7 +20,7 @@ categories: java static eclipse
 
 ## singleton
 
-#### ✔ 싱글톤패턴
+### ✔ 싱글톤패턴
 - 싱글톤패턴은 인스턴스를 단 하나만 생성하는 디자인 패턴이다. *(ex. 회사 객체 - 직원은 여러명이지만 회사는 하나이다.)*
 - 싱글톤 패턴 특징
   - **private 생성자**  
@@ -32,7 +32,7 @@ categories: java static eclipse
     오직 getInstance() 메소드로 instance에 접근가능하다.
 
 
-##### Eager initialization (이른 초기화 방식)
+#### Eager initialization (이른 초기화 방식)
 ```java
 package singleton;
 
@@ -54,7 +54,7 @@ public class Company {
 단점 : 사용유무와 상관없이 항상 메모리에 상주한다.
 
 
-##### Lazy initialization (늦은 초기화 방식)
+#### Lazy initialization (늦은 초기화 방식)
 ```java
 package singleton;
 
