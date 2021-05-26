@@ -67,9 +67,9 @@ public class Company {
 
 	// private로 선언한 인스턴스 반환하는 public메소드
 	public static Company getInstance() {
-    if (instance == null) { // 최초로 사용할 때 인스턴스 생성
-      instance = new Company();
-    }
+    		if (instance == null) { // 최초로 사용할 때 인스턴스 생성
+      			instance = new Company();
+    		}
 		return instance;
 	}
 }
