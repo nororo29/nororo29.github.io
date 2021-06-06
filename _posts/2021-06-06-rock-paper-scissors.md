@@ -5,8 +5,8 @@ categories: java eclipse
 ---
 
 ## ✔ 가위 바위 보 게임
-이미지...
 
+![rock-paper-scissors](https://user-images.githubusercontent.com/50298349/120923882-dfe7a500-c70b-11eb-974a-2b6bd8d9cad4.jpg)
 - 입력...
 - **“0”일 때** :   
     종료, 승률출력, 포인트 출력, break;
