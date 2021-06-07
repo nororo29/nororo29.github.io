@@ -5,7 +5,7 @@ categories: java eclipse
 ---
 
 ## ✔ DVD 대여 서비스
-이미지...
+![3](https://user-images.githubusercontent.com/50298349/121013277-95c9f680-c7d3-11eb-87dd-cea1751bec06.jpg)
 
 ##### 기능
 - 신규가입(이름, 전화번호) : Customer(이름, id, 전화번호) 객체 생성 => customerList에 저장됨
